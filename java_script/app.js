@@ -59,6 +59,9 @@ const CIUDADANIA = [
   { emoji: '🤲', titulo: 'Voluntariado Social activa 💪',                  desc: 'Colectivas de adolescentes y jóvenes de Villa El Salvador, por un objetivo común: la defensa de los derechos sexuales y reproductivos y una vida libre de violencia basada en género.', img: '../img/comunidad_3.jpg' },
 ];
 
+/* ── Data: Selected products (temporary) ─────────────────── */
+let productosSeleccionados = [];
+
 /* ── Data: Donations catalog ─────────────────────────────── */
 const CATALOG = [
   {
@@ -351,7 +354,7 @@ function renderDonaciones() {
         ${cat.productos.map(p => {
           const hasImg = p.img && p.img.length > 0;
           return `
-            <div class="product-card">
+            <div class="product-card" onclick="seleccionarProducto('${p.nombre.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.emoji}')" style="cursor:pointer;">
               <div class="product-card-img">${hasImg ? `<img src="${p.img}" alt="${p.nombre}" style="width:100%;height:100%;object-fit:contain;padding:10px;">` : p.emoji}</div>
               <div class="product-card-body">
                 <div class="product-card-name">${p.nombre}</div>
@@ -364,13 +367,33 @@ function renderDonaciones() {
     </div>
   `).join('');
 
+  // Generar mensaje de productos seleccionados
+  const mensajeTemporal = productosSeleccionados.length > 0 
+    ? `<div class="seleccion-temporal">
+        <h4>Productos seleccionados:</h4>
+        <ul>
+          ${productosSeleccionados.map((p, i) => `<li>${p.emoji} ${p.nombre} <button onclick="event.stopPropagation(); eliminarProducto(${i})" style="background:#ff6b6b;border:none;border-radius:3px;padding:2px 6px;cursor:pointer;color:white;margin-left:5px;">✕</button></li>`).join('')}
+        </ul>
+        <p><small>Has clic en 👇👇"Clic aquí para comprar" para enviar tu pedido</small></p>
+      </div>`
+    : '';
+
+  // Generar mensaje para WhatsApp
+  let waLink = 'https://wa.me/939949494';
+  if (productosSeleccionados.length > 0) {
+    const mensaje = encodeURIComponent(`*Nuevo Pedido* \n\n${productosSeleccionados.map(p => `${p.emoji} *${p.nombre}*\n   ${p.desc}`).join('\n\n')}\n\n*Total de productos:* ${productosSeleccionados.length}\n\n¡Gracias por tu apoyo! 💙`);
+    waLink = `https://wa.me/939949494?text=${mensaje}`;
+  }
+
   return `
     <section id="section-donaciones">
       <div class="donaciones-welcome reveal">
         <p>Agradecemos profundamente esta visita, las donaciones son el motor que transforma nuestras ideas en acciones concretas. 💙</p>
       </div>
 
-      <div class="donaciones-catalog">
+      ${mensajeTemporal}
+
+      <div class="donaciones-catalog"> 
         ${catalogHTML}
       </div>
 
@@ -381,7 +404,7 @@ function renderDonaciones() {
           <li>Realiza otro Clic aquí, te llevará al WhatsApp del encargado de ventas.</li>
           <li>Para pagar te brindamos el número de cuenta de banco o Yape por el WhatsApp.</li>
         </ol>
-        <a href="https://wa.me/939949494" target="_blank" class="btn-comprar">Clic aquí para comprar 🛒</a>
+        <a href="${waLink}" target="_blank" class="btn-comprar">Clic aquí para comprar 🛒</a>
       </div>
     </section>
   `;
@@ -658,3 +681,18 @@ document.addEventListener('DOMContentLoaded', () => {
       : '0 2px 12px rgba(58,123,213,.2)';
   }, { passive: true });
 });
+
+/* ============================================================
+   SELECCION DE PRODUCTOS
+   ============================================================ */
+function seleccionarProducto(nombre, desc, emoji) {
+  productosSeleccionados.push({ nombre, desc, emoji });
+  navigateTo('donaciones');
+  showToast('✓ Producto agregado: ' + nombre);
+}
+
+function eliminarProducto(index) {
+  const eliminado = productosSeleccionados.splice(index, 1)[0];
+  navigateTo('donaciones');
+  showToast('✕ Producto eliminado: ' + eliminado.nombre);
+}
