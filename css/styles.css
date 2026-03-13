@@ -90,7 +90,7 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   background: rgba(255,255,255,.2);
   border-radius: var(--radius-sm);
   padding: .3rem .7rem;
-  min-width: 90px;
+  min-width: 60px;
 }
 .logo-icon { font-size: 1.3rem; }
 
@@ -302,7 +302,6 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   background: linear-gradient(135deg, var(--color-primary) 0%, #5ba3f5 100%);
   padding-bottom: 1rem;
 }
-.voces-hero-carousel { }
 
 .hero-cta-wrap {
   text-align: center;

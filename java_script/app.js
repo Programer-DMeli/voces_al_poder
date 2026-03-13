@@ -5,10 +5,10 @@
 
 /* ── Data: Alliance logos ────────────────────────────────── */
 const ALIANZAS = [
-  { name: 'Flora-Tristan',    emoji: '♀️' },
+  { name: 'Flora Tristán',    emoji: '♀️' },
   { name: 'JEAN', emoji: '🤲' },
   { name: 'Paramedicos del Peru',  emoji: '💙' },
-  { name: 'Tecsup',          emoji: '🤝' },
+  { name: 'Tecsup LEAD',          emoji: '🤝' },
   { name: 'Stereo Villa 101.7 FM', emoji: '📻'},
   { name: 'Fundacion adsis', emoji: '💚'},
   { name: 'Generalitat valenciana', emoji: '🤲'},
