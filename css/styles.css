@@ -1034,15 +1034,15 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   display: flex; align-items: center; justify-content: center;
   width: 30px; height: 30px;
   border-radius: 50%;
-  font-size: .75rem;
+  font-size: .90rem;
   font-weight: 800;
   transition: transform var(--transition), background var(--transition);
 }
 .fsoc:hover { transform: scale(1.15); }
 .fsoc.fb { background: #1877f2; color: #fff; }
 .fsoc.ig { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af); color: #fff; }
-.fsoc.tk { background: #010101; color: #fff; }
-.fsoc.tw { background: #000; color: #fff; }
+.fsoc.tk { background: #01010100; color: #fff; }
+.fsoc.wf { background: #00000000; color: #fff; } 
 
 .footer-copy {
   background: var(--color-footer-dark);
