@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voces al Poder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== STICKY HEADER ===== -->
+  <header id="main-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="../img/logo_voces-sin-fondo.png" class="logo-icon" alt="log_voces" width="90px" height="70px" style="border-radius: 40%;">
+      </div>
+      <div class="header-brand">
+        <span class="brand-voces">voces</span>
+        <span class="brand-al">al</span>
+        <span class="brand-poder">poder</span>
+      </div>
+      <div class="header-social">
+        <span class="social-label">Síguenos en nuestra redes</span>
+        <div class="social-icons">
+          <a href="https://wa.me/939949494" target="_blank" class="social-icon" aria-label="whatsapp">
+            <img src="../img/whatsapp.svg" alt="whatsapp" />
+          </a>
+          <a href="#" class="social-icon" aria-label="facebook">
+            <img src="../img/facebook.svg" alt="facebook" />
+          </a>
+          <a href="#" class="social-icon" aria-label="instagram">
+            <img src="../img/instagram.svg" alt="instagram" />
+          </a>
+          <a href="#" class="social-icon" aria-label="Tik_tok">
+            <img src="../img/tik-tok.svg" alt="tik-tok" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav id="main-nav">
+      <button class="nav-btn active" data-section="voces">Voces</button>
+      <button class="nav-btn" data-section="sobre_nosotros">Sobre Nosotros</button>
+      <button class="nav-btn" data-section="accion_social">Acción Social</button>
+      <button class="nav-btn" data-section="donaciones">Donaciones</button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menú">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT (SPA target) ===== -->
+  <main id="app-content"></main>
+
+  <!-- ===== SHARED FOOTER ===== -->
+  <footer id="main-footer">
+    <div class="footer-inner">
+
+      <!-- Comments marquee display -->
+      <div class="footer-comments-display">
+        <p class="footer-comments-label">💬Comentarios de personas, tu comentario es nuestro poder</p>
+        <div class="marquee-track" id="comments-marquee">
+          <div class="marquee-inner" id="marquee-inner">
+            <!-- Comments will be injected here by JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-main-grid"> 
+        <!-- Logo + Comment form -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="../img/logo_voces-sin-fondo.png"  class="footer-logo-icon" alt="logo_voces_footer" height="120px" width="120px" style="border-radius: 20%;"/>
+          </div>
+          <p class="footer-tagline">Comenta, somos voces al poder</p>
+          <form id="comment-form" class="comment-form" novalidate>
+            <input type="text" id="comment-name" placeholder="Nombre:" maxlength="40" required />
+            <textarea id="comment-text" placeholder="Déjanos tu comentario" maxlength="200" required></textarea>
+            <button type="submit" class="btn-comment-submit">Enviar</button>
+          </form>
+        </div>
+
+        <!-- Contacts -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contactos:</h4>
+          <ul class="footer-contact-list">
+            <li>📞 teléfono: <a href="tel:939949494">939949494</a></li>
+            <li>💬 whatsapp: <a href="https://wa.me/939949494" target="_blank">link</a></li>
+            <li>✉️ correo: <a href="mailto:vocesalpoder@gmail.com">vocesalpoder@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Somos más navigation -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Somos más</h4>
+          <ul class="footer-nav-list">
+            <li><button class="footer-nav-link" data-section="voces">voces</button></li>
+            <li><button class="footer-nav-link" data-section="sobre_nosotros">sobre nosotros</button></li>
+            <li><button class="footer-nav-link" data-section="accion_social">acción social</button></li>
+            <li><button class="footer-nav-link" data-section="donaciones">donaciones</button></li>
+          </ul>
+          <div class="footer-social-icons">
+            <a href="https://wa.me/939949494" target="_blank" class="fsoc wf" aria-label="whatsapp">
+            <img src="../img/whatsapp.svg" alt="whatsapp" />
+            </a>
+            <a href="#" class="fsoc fb" aria-label="facebook">
+            <img src="../img/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="fsoc ig" aria-label="instagram">
+            <img src="../img/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>copyright: 2026 &copy; Voces al Poder — Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../java_script/app.js"></script>
+</body>
+</html>
