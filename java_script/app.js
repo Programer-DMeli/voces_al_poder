@@ -10,7 +10,7 @@ const ALIANZAS = [
   { name: 'Paramedicos del Peru',  emoji: '💙' },
   { name: 'Tecsup LEAD',          emoji: '🤝' },
   { name: 'Stereo Villa 101.7 FM', emoji: '📻'},
-  { name: 'Fundacion adsis', emoji: '💚'},
+  { name: 'Fundacion Adsis', emoji: '💚'},
   { name: 'Generalitat valenciana', emoji: '🤲'},
   { name: 'Voz Viva de Mujer', emoji: '♀️'},
 
@@ -20,23 +20,22 @@ const ALIANZAS = [
 const JUNTA = [
   { nombre: 'Yadira',     rol: 'Presidenta',                       emoji: '👩‍💼', presentacion: 'Ejemplo:.',      objetivos: 'Ejemplo:.',              hobbies: 'ejemplo' },
   { nombre: 'Jhoseth',   rol: 'Vicepresidente',                   emoji: '👨‍💼', presentacion: 'Ejemplo:.',        objetivos: 'Ejemplo:.',                    hobbies: 'ejemplo' },
-  { nombre: 'Daniel',   rol: 'Secretaria General',               emoji: '👩‍💻', presentacion: 'Ejemplo:.',        objetivos: 'Ejemplo:.',                   hobbies: 'ejemplo' },
-  { nombre: 'Alexandra',  rol: 'Tesorero',                         emoji: '👨‍💰', presentacion: 'Ejemplo:.',       objetivos: 'Ejemplo:.',                    hobbies: 'ejemplo' },
-  { nombre: 'Name',  rol: 'Coord. de Comunicaciones',         emoji: '👩‍💻', presentacion: 'Ejemplo:.',           objetivos: 'Ejemplo:.',                    hobbies: 'ejemplo' },
-  { nombre: 'Name',    rol: 'Coord. de Relaciones Institucionales', emoji: '👩‍💻', presentacion: 'Ejemplo:.',     objetivos: 'Ejemplo:.',                   hobbies: 'ejemplo' },
-  { nombre: 'Name', rol: 'Coord. de Emprendimiento y Autogestión', emoji: '👩‍💻', presentacion: 'Ejemplo:.',           objetivos: 'Ejemplos.',          hobbies: 'ejemplo' },
+  { nombre: 'Yadira Paredes',   rol: 'Secretaria General',               emoji: '👩‍💻', presentacion: 'Ejemplo:.',        objetivos: 'Ejemplo:.',                   hobbies: 'ejemplo' },
+  { nombre: 'Daniel',  rol: 'Coord. de Comunicaciones',         emoji: '👨‍💼', presentacion: 'Ejemplo:.',           objetivos: 'Ejemplo:.',                    hobbies: 'ejemplo' },
+  { nombre: 'Niurka',    rol: 'Coord. de Relaciones Institucionales', emoji: '👩‍💻', presentacion: 'Ejemplo:.',     objetivos: 'Ejemplo:.',                   hobbies: 'ejemplo' },
+  { nombre: 'Gabriel Puelles', rol: 'Coord. de Emprendimiento y Autogestión', emoji: '👨‍💼', presentacion: 'Ejemplo:.',           objetivos: 'Ejemplos.',          hobbies: 'ejemplo' },
 ];
 
 const VOLUNTARIOS = [
-  { nombre: 'Nombre',   rol: 'Voluntaria',  emoji: '👩‍💻', presentacion: 'Soy si a todoo.', objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
+  { nombre: 'Meliton',   rol: 'Voluntario',  emoji: '👨‍💼', presentacion: 'Soy estudiante en el instituto Tecsup, actualmente estoy estudiando Diseño y desarollo de Software y tengo 18 años, ', objetivos: 'En voces al poder, quiero ayudar a defender los derechos de las personas a traves de soluciones tecnologicas para mejorar la atencion y promover un mundo mas integro', hobbies: 'Me gusta la musica, viajar,  la programacion y participar en voluntariados' },
   { nombre: 'Nombre',      rol: 'Voluntario', emoji: '👩‍💻', presentacion: 'Soy si a todoo.',       objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
   { nombre: 'Nombre',     rol: 'Voluntaria',  emoji: '👩‍💻', presentacion: 'Soy si a todoo.',    objetivos: 'Ejemplo:.',  hobbies: 'Hobbies' },
-  { nombre: 'Nombre',    rol: 'Voluntario', emoji: '👩‍💻',  presentacion: 'Soy si a todoo.',    objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
+  { nombre: 'Nombre',    rol: 'Voluntario', emoji: '👨‍💼',  presentacion: 'Soy si a todoo.',    objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
   { nombre: 'Nombre',   rol: 'Voluntaria', emoji: '👩‍💻', presentacion: 'Soy si a todoo.', objetivos: 'Ejemplo:.',   hobbies: 'Hobbies' },
   { nombre: 'Nombre',    rol: 'Voluntario', emoji: '👩‍💻', presentacion: 'Soy si a todoo.',     objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
-  { nombre: 'Nombre',  rol: 'Voluntaria', emoji: '👩‍💻', presentacion: 'Soy si a todoo.',      objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
+  { nombre: 'Nombre',  rol: 'Voluntaria', emoji: '👨‍💼', presentacion: 'Soy si a todoo.',      objetivos: 'Ejemplo:.', hobbies: 'Hobbies' },
   { nombre: 'Nombre',  rol: 'Voluntario', emoji: '👩‍💻', presentacion: 'Soy si a todoo.', objetivos: 'Ejemplo:.',   hobbies: 'Hobbies' },
-  { nombre: 'Nombre', rol: 'Voluntaria', emoji: '👩‍💻', presentacion: 'Soy si a todoo.',  objetivos: 'Ejemplo:.',           hobbies: 'Hobbies' },
+  { nombre: 'Nombre', rol: 'Voluntaria', emoji: '👨‍💼', presentacion: 'Soy si a todoo.',  objetivos: 'Ejemplo:.',           hobbies: 'Hobbies' },
   { nombre: 'Nombre',   rol: 'Voluntario', emoji: '👩‍💻', presentacion: 'Soy si a todoo.',    objetivos: 'Ejemplo.', hobbies: 'Hobbies' },
 ];
 
