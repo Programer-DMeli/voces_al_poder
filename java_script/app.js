@@ -100,7 +100,7 @@ const CAROUSEL_VOCES = [
 
 const CAROUSEL_SOBRE = [
   { overlay: { title: 'Nuestra historia comienza contigo',  text: 'Una organización horizontal y valiente.' }, bg: '../img/carrusel_1_sobre_nosotros.jpg' },
-  { overlay: { title: 'Comprometidos con la juventud',      text: 'Más de 3 años de impacto social.' }, bg: '../img/carrusel_2_sobre_nosotros.jpg' },
+  { overlay: { title: 'Comprometidos con la juventud',      text: 'Más de 2 años de impacto social.' }, bg: '../img/carrusel_2_sobre_nosotros.jpg' },
   { overlay: { title: 'Diversidad que nos une',             text: 'Cada voz importa en nuestra comunidad.' }, bg: '../img/carrusel_3_sobre_nosotros.jpg' },
 ];
 

@@ -220,12 +220,12 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
 }
 .carousel-slide img {
   width: 100%;
-  height: clamp(220px, 45vw, 520px);
+  height: clamp(220px, 45vw, 620px);
   object-fit: cover;
 }
 .carousel-slide-placeholder {
   width: 100%;
-  height: clamp(220px, 45vw, 520px);
+  height: clamp(220px, 45vw, 620px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,10 +255,7 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
 .carousel-btn {
   position: absolute;
   top: 50%; transform: translateY(-50%);
-  background: rgba(255,255,255,.3);
-  backdrop-filter: blur(6px);
   color: #fff;
-  border: 2px solid rgba(255,255,255,.5);
   border-radius: 50%;
   width: 42px; height: 42px;
   font-size: 1.1rem;
@@ -313,6 +310,7 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   font-size: clamp(.95rem, 2.5vw, 1.25rem);
   color: var(--color-primary);
   margin-bottom: .8rem;
+  font-weight: bold;
 }
 .btn-hero-cta {
   display: inline-block;
@@ -578,9 +576,9 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr) );
   gap: 1.2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .member-card {
@@ -601,7 +599,7 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   margin-bottom: .5rem;
 }
 .member-photo {
-  width: 90px; height: 90px;
+  width: 140px; height: 140px;
   border-radius: var(--radius-md);
   background: var(--color-bg2);
   margin: 0 auto .8rem;
@@ -643,6 +641,7 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   margin: .4rem 0 .25rem;
   font-size: .75rem;
   display: inline-block;
+  width: 100px;
 }
 
 /* ============================================================
@@ -1038,8 +1037,8 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   transition: transform var(--transition), background var(--transition);
 }
 .fsoc:hover { transform: scale(1.15); }
-.fsoc.fb { background: #1877f2; color: #fff; }
-.fsoc.ig { background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af); color: #fff; }
+.fsoc.fb { background: #00000000; color: #fff; }
+.fsoc.ig { background: #00000000; color: #fff; }
 .fsoc.tk { background: #01010100; color: #fff; }
 .fsoc.wf { background: #00000000; color: #fff; } 
 
@@ -1082,7 +1081,7 @@ h4, h5 { font-family: var(--font-body); font-weight: 700; }
   .nav-hamburger { display: none; /* nav wraps, no need for burger */ }
 
   .voces-info-grid { grid-template-columns: 1fr; }
-  .team-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .team-grid { grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); }
   .accion-events-grid { grid-template-columns: 1fr; }
   .catalog-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 }
